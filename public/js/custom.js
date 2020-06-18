@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-    $('.landing__slider--container').slick({
+    $('.landing__slider--container, .features__slider').slick({
         arrows: true,
         infinite: false,
         speed: 500,

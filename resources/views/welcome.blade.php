@@ -109,27 +109,115 @@
                 </div>
             </div>
         </section>
-            <!-- <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+        <section class="landing__features">
+            <div class="features__slider">
+                <div class="features__slide">
+                    <div class="left">
+                        <span class="features__txt">
+                            Grande acervo de atividades bla bla bla bla bla bla bla
+                        </span>
+                    </div>
+                    <div class="right">
+                        <figure>
+                            <img src="{{ asset('images/slide-1.png') }}" alt="atividades">
+                        </figure>
+                    </div>
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="features__slide">
+                    <div class="left">
+                        <span class="features__txt">
+                            Atividades em grupo, com seus amigos bla bla bla bla bla bla bla
+                        </span>
+                    </div>
+                    <div class="right">
+                        <figure>
+                            <img src="{{ asset('images/feature-2.png') }}" alt="atividades">
+                        </figure>
+                    </div>
                 </div>
-            </div> -->
+            </div>
+        </section>
+        <section class="landing__register">
+            <h2>Voce pode fazer uma pré-inscrição aqui</h2>
+            <div class="form">
+                <form method="POST" action="{{ route('register') }}">
+                    @csrf
 
+                    <div class="form-group row">
+                        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-mail') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="telefone" class="col-md-4 col-form-label text-md-right">{{ __('Telefone') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="telefone" type="tel" class="form-control @error('telefone') is-invalid @enderror" name="telefone" value="{{ old('telefone') }}" required>
+
+                            @error('telefone')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Senha') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirme a Senha') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                        </div>
+                    </div>
+
+                    <div class="form-group row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Registre-se') }}
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
         </div>
-        <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>

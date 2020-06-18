@@ -1,5 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
 html {
     font-size: 62.5%;
+}
+
+body {
+    background: #e8e8e8;
 }
 
 .wrapper {
@@ -81,6 +91,68 @@ html {
         & img {
             margin: 2rem auto 4rem;
         }
+    }
+    &__features {
+        padding-top: 0rem;
+    }
+    &__register {
+        & h2 {
+            text-align: center;
+            margin: 3rem 0;
+            font-size: 2.8rem;
+        }
+        & .form {
+            width: 70vw;
+            margin: 0 auto;
+            padding: 2rem 0 6rem;
+        }
+        & label {
+            flex: 0 0 20%;
+            font-size: 1.4rem;
+        }
+        & .col-md-6 {
+            max-width: unset;
+            flex: 0 0 70%;
+        }
+        & input {
+            height: 3.2rem;
+        }
+        & .row {
+            margin: 2rem 0;
+        }
+    }
+}
+
+.offset-md-4 {
+    margin-left: 20.333333%;
+}
+
+button.btn.btn-primary {
+    font-size: 1.9rem;
+    padding: 0.7rem 1.7rem;
+}
+
+.features {
+    &__slider {
+        background: #e8e8e8;
+    }
+    &__slide {
+        display: flex !important;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 9rem 0px;
+        .left,
+        .right {
+            flex: 0 0 30%;
+        }
+        .right img {
+            margin: 0 auto;
+        }
+    }
+    &__txt {
+        color: #413535;
+        text-shadow: 1px 1px 2px #363636;
+        font-size: 4rem;
     }
 }
 
