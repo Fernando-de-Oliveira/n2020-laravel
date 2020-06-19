@@ -10934,6 +10934,10 @@ a.text-dark:focus {
   outline: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -11058,6 +11062,25 @@ body {
 
 .landing__register .row {
   margin: 2rem 0;
+}
+
+.landing__aboutUs {
+  background: #e8e8e8;
+}
+
+.landing__aboutUs img {
+  width: 28%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.landing__aboutUs span {
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  padding: 2rem 20rem 3rem;
+  text-align: center;
 }
 
 .offset-md-4 {

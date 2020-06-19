@@ -4,6 +4,10 @@
     outline: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -88,7 +92,7 @@ body {
             text-align: center;
             padding: 4rem 0;
         }
-        & img {
+        img {
             margin: 2rem auto 4rem;
         }
     }
@@ -96,29 +100,45 @@ body {
         padding-top: 0rem;
     }
     &__register {
-        & h2 {
+        h2 {
             text-align: center;
             margin: 3rem 0;
             font-size: 2.8rem;
         }
-        & .form {
+        .form {
             width: 70vw;
             margin: 0 auto;
             padding: 2rem 0 6rem;
         }
-        & label {
+        label {
             flex: 0 0 20%;
             font-size: 1.4rem;
         }
-        & .col-md-6 {
+        .col-md-6 {
             max-width: unset;
             flex: 0 0 70%;
         }
-        & input {
+        input {
             height: 3.2rem;
         }
-        & .row {
+        .row {
             margin: 2rem 0;
+        }
+    }
+    &__aboutUs {
+        background: #e8e8e8;
+        img {
+            width: 28%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        span {
+            font-size: 2rem;
+            display: block;
+            width: 100%;
+            padding: 2rem 20rem 3rem;
+            text-align: center;
         }
     }
 }

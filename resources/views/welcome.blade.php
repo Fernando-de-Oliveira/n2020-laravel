@@ -217,6 +217,12 @@
                 </form>
             </div>
         </section>
+        <section class="landing__aboutUs">
+            <figure>
+                <img src="{{ asset('images/about-us.png') }}" alt="Imagem">
+            </figure>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam praesentium nesciunt deserunt velit qui, veritatis numquam obcaecati, </span>
+        </section>
         </div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
